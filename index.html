@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASMR Oasis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="navbar">
+      <div class="logo">ASMR Oasis</div>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Меню</button>
+      <ul class="nav-links" id="navigation">
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#about">О проекте</a></li>
+        <li><a href="#sessions">Сеансы</a></li>
+        <li><a href="#library">Библиотека</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Погрузитесь в мир ASMR</h1>
+      <p>Слушайте шепот, звуки дождя и мягкие касания — создайте собственное спокойное пространство в любое время суток.</p>
+      <a class="cta" href="#sessions">Выбрать сеанс</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="about" id="about">
+      <div class="section-heading">
+        <span class="eyebrow">О проекте</span>
+        <h2>Сенсорный отдых для души и тела</h2>
+      </div>
+      <div class="about-grid">
+        <p>
+          ASMR Oasis — это коллекция тщательно подобранных звуковых ландшафтов и медитативных практик,
+          которые помогают снять напряжение, улучшить концентрацию и настроиться на глубокий сон.
+          Мы объединяем создателей и слушателей, чтобы каждый нашел свой источник тишины.
+        </p>
+        <ul>
+          <li><span class="accent">+120</span> минут эксклюзивных звуков каждую неделю.</li>
+          <li>Ведущие артисты ASMR из России и Европы.</li>
+          <li>Темы для разных состояний: сон, учеба, восстановление, вдохновение.</li>
+          <li>Гид по осознанному восприятию звуков для новичков.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sessions" id="sessions">
+      <div class="section-heading">
+        <span class="eyebrow">Сеансы</span>
+        <h2>Выберите звуковое путешествие</h2>
+        <p>Фильтруйте коллекцию по настроению и продолжительности. Каждый трек доступен в HD качестве.</p>
+      </div>
+      <div class="session-filters" role="group" aria-label="Фильтр по атмосфере">
+        <button class="filter-button active" data-filter="all">Все</button>
+        <button class="filter-button" data-filter="sleep">Сон</button>
+        <button class="filter-button" data-filter="focus">Фокус</button>
+        <button class="filter-button" data-filter="relax">Релакс</button>
+      </div>
+      <div class="session-grid">
+        <article class="session-card" data-category="sleep">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Ночной лес" loading="lazy" />
+          <div class="session-body">
+            <h3>Шепот леса</h3>
+            <p>Тихие шорохи листьев, отдаленный шепот и мерный стук дождя — идеальный фон для глубокого сна.</p>
+            <audio controls preload="none">
+              <source src="https://cdn.pixabay.com/download/audio/2022/03/23/audio_fb37c0ed30.mp3?filename=forest-night-ambient-140028.mp3" type="audio/mpeg" />
+              Ваш браузер не поддерживает аудио.
+            </audio>
+          </div>
+        </article>
+        <article class="session-card" data-category="focus">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80" alt="Рабочий стол с наушниками" loading="lazy" />
+          <div class="session-body">
+            <h3>Звуки студии</h3>
+            <p>Четкие щелчки, мягкие касания и спокойный голос, чтобы удерживать внимание во время работы.</p>
+            <audio controls preload="none">
+              <source src="https://cdn.pixabay.com/download/audio/2022/10/07/audio_6a7f04e857.mp3?filename=paper-shuffling-ambient-121101.mp3" type="audio/mpeg" />
+              Ваш браузер не поддерживает аудио.
+            </audio>
+          </div>
+        </article>
+        <article class="session-card" data-category="relax">
+          <img src="https://images.unsplash.com/photo-1499084732479-de2c02d45fc4?auto=format&fit=crop&w=800&q=80" alt="Ароматические свечи" loading="lazy" />
+          <div class="session-body">
+            <h3>Тепло свечи</h3>
+            <p>Потрескивание фитиля, легкие выдохи и теплая атмосфера, чтобы расслабиться после долгого дня.</p>
+            <audio controls preload="none">
+              <source src="https://cdn.pixabay.com/download/audio/2022/08/21/audio_2746b0ea20.mp3?filename=fireplace-ambient-117242.mp3" type="audio/mpeg" />
+              Ваш браузер не поддерживает аудио.
+            </audio>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="library" id="library">
+      <div class="section-heading">
+        <span class="eyebrow">Библиотека</span>
+        <h2>Живые трансляции и гайды</h2>
+        <p>Поддержите любимых артистов или откройте новые техники расслабления с помощью наших подборок.</p>
+      </div>
+      <div class="library-grid">
+        <article class="library-card">
+          <h3>Гид для новичков</h3>
+          <p>Пошаговые советы о том, как правильно слушать ASMR, чтобы получить максимум удовольствия и пользы.</p>
+          <a href="#" class="text-link">Читать руководство</a>
+        </article>
+        <article class="library-card">
+          <h3>Прямая трансляция</h3>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube-nocookie.com/embed/FoOfrl0i6Ds" title="ASMR stream" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p>Подключайтесь к еженедельному прямому эфиру с ведущим артиста ASMR Oasis.</p>
+        </article>
+        <article class="library-card">
+          <h3>Плейлист Spotify</h3>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUvQoIOFMFUT?utm_source=generator" width="100%" height="200" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <p>Слушайте подборку мягких звуков и голосов в любимом приложении.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="section-heading">
+        <span class="eyebrow">Подписка</span>
+        <h2>Получайте новые релизы каждую неделю</h2>
+        <p>Подпишитесь на нашу рассылку и первыми узнавайте о свежих сеансах, трансляциях и событиях.</p>
+      </div>
+      <form class="subscribe-form">
+        <label for="email" class="sr-only">Ваш email</label>
+        <input id="email" type="email" placeholder="example@mail.com" required />
+        <button type="submit">Подписаться</button>
+      </form>
+      <p class="privacy">Мы никогда не отправляем спам и соблюдаем конфиденциальность ваших данных.</p>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="footer-grid">
+      <div>
+        <h3>ASMR Oasis</h3>
+        <p>Создаем безопасное пространство для звукового отдыха и осознанного расслабления.</p>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="mailto:hello@asmroasis.ru">hello@asmroasis.ru</a></li>
+          <li><a href="https://t.me/asmroasis" target="_blank" rel="noopener">Telegram</a></li>
+          <li><a href="https://vk.com" target="_blank" rel="noopener">VK</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#sessions">Сеансы</a></li>
+          <li><a href="#library">Библиотека</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> ASMR Oasis. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
